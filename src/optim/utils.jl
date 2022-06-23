@@ -5,7 +5,7 @@ using KnetNLPModels
 
 Create a minibatch of the data `X`, `Y` of size `minibatch_size`.
 """
-KnetNLPModels.  create_minibatch(x_data, y_data, minibatch_size) = minibatch(x_data, y_data, minibatch_size; xsize=(size(x_data, 1), size(x_data, 2), 1, :))
+KnetNLPModels.create_minibatch(x_data, y_data, minibatch_size) = minibatch(x_data, y_data, minibatch_size; xsize=(size(x_data, 1), size(x_data, 2), 1, :))
 
 """
     vector_params(chain :: C) where C <: Chain

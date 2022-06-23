@@ -80,7 +80,6 @@ function partitioned_gradient(chain :: PartChainPSLDP, data_xy, table_indices ::
 	return epv_grad
 end 
 
-
 function partitioned_gradient!(chain :: PartChainPSLDP, data_xy, table_indices :: Matrix{Vector{Int}}, epv_grad :: Elemental_pv{T}) where T <: Number
 	vars = Knet.params(chain)		
 	C = size(table_indices)[1]
